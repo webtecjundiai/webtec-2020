@@ -5,10 +5,10 @@ html, body {
 /* menu */
 .menu {
   width: 100%;
-  height: 120px;
-  padding: 15px;
+  height: 100px;
+  padding: 16px;
   background-color: #fff;
-  box-shadow: 0px 2px 20px rgba(106, 7, 24, 0.11);
+  box-shadow: 0px 2px 20px rgba(106, 7, 24, 0.09);
 }
 
 .menu nav,
@@ -31,6 +31,64 @@ html, body {
 
 /* content */
 .menu + div {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* card */
+.card__avatar-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.card__details-primary {
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.card__details-primary span {
+  font-size: 15px;
+}
+
+.card__details-secondary {
+  color: #838484;
+  line-height: 1;
+}
+
+.card__details-secondary span {
+  font-size: 13px;
+}
+
+/* truncate */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@supports (-webkit-line-clamp: 1) {
+  .truncate {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+}
+
+@supports (-webkit-line-clamp: 1) {
+  .truncate-1 {
+    -webkit-line-clamp: 1;
+  }
+}
+
+@supports (-webkit-line-clamp: 2) {
+  .truncate-2 {
+    -webkit-line-clamp: 2;
+  }
+}
+
+@supports (-webkit-line-clamp: 3) {
+  .truncate-3 {
+    -webkit-line-clamp: 3;
+  }
 }

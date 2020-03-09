@@ -1,5 +1,6 @@
 'use strict';
 
+// auxiliar functions
 function _minTwoDigits(number) {
   return number < 10 ? `0${number}` : `${number}`;
 }
@@ -12,8 +13,8 @@ function _truncateMonthName(monthName) {
   return `${monthName.substring(0, 3)}.`
 }
 
-const date = new Date();
-function formatDate() {
+// main function
+function formatDate(date) {
   const day = date.getDate();
   const formattedDay = _minTwoDigits(day);
   
