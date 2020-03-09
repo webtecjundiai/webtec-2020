@@ -1,0 +1,28 @@
+body {
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+#container {
+  width: 100%;
+}
+
+.box {
+  display: inline-block;
+}
+
+#box-1 {
+  width: 200px;
+}
+
+#box-2 {
+  width: 600px;
+}
+
+.img {
+  width: 200px;
+}
+
+.text {
+  padding-left: 10px;
+}
